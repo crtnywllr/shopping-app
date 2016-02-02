@@ -13,7 +13,7 @@
     <header>
         <div class="content">
             <i class="fa fa-shopping-basket fa-5x" style="color:#fff"></i>
-            <h1><span style="color:#ff5252">Shopping</span> List</h1>
+            <h1><span style="color:#F79A7A">Shopping</span> List</h1>
         </div>
     </header>
 
@@ -29,14 +29,39 @@
                 <input id='new-item' type="text" placeholder="Add item..." maxlength='20'>
             </div>
             <ul>
-                <li>banana</li>
-                <li>blueberry cheesecake</li>
-                <li>apple</li>
-                <li>laundry detergent</li>
-                <li>seltzer</li>
+                <li>
+                    <button class="checkbox click">✓</button>
+                    <span class='ticked'>banana</span>
+                    <button class="delete">X</button>
+                </li>
+                <li>
+                    <button class="checkbox">✓</button>
+                    <span>blueberry cheesecake</span>
+                    <button class="delete">X</button>
+                </li>
+                <li>
+                    <button class="checkbox click">✓</button>
+                    <span class='ticked'>apple</span>
+                    <button class="delete">X</button>
+                </li>
+                <li>
+                    <button class="checkbox">✓</button>
+                    <span>laundry detergent</span>
+                    <button class="delete">X</button>
+                </li>
+                <li>
+                    <button class="checkbox click">✓</button>
+                    <span class='ticked'>seltzer</span>
+                    <button class="delete">X</button>
+                </li>
             </ul>
         </div>
     </section>
+    <footer>
+        <div class="content">
+            <button class="clear">Clear List</button>
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -61,28 +61,77 @@ header h1 {
 
 #new-item {
     text-align: center;
-    color: #;
-    border-color: #B2EBF2;
-    background-color: #00BC9D;
-    border-radius: 16px;
+    color: #727272;
+    border: 3px dashed #00BCD4;
+    background-color: #fff;
+    border-radius: 1rem;
     width: 21rem;
     margin: 0 auto;
 }
 
-ul {
-    list-style: none;
-    margin-top: 2rem;
+.content ul {
+    list-style: outside none none;
+    margin: 1rem auto;
+    width: 70%;
 }
 
-.form li {
-    width: 33%;
+.content li {
+    display: block;
+    height: 2.5em;
+    padding-top: 0.5em;
     text-align: left;
+}
+
+.checkbox,
+.delete {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 1rem;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.content .delete {
+    float: right;
+    color: #F3A4B1;
+}
+
+.content .click {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.content .ticked {
+    text-decoration: line-through;
+    text-decoration-color: #00BCD4;
+}
+
+.checkbox:hover {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.delete:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 
 /* Footer styles
 (all the styles inside the < footer > tag)
 */
+
+.clear {
+    background-color: #F79A7A;
+    border-color: #F79A7A;
+    border-radius: 8px;
+    height: 4rem;
+    width: 20rem;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 
 /* Responsive styles

@@ -23,14 +23,14 @@
 
 body {
     font-family: 'Muli', sans-serif;
+    color: #212121;
+    font-size: 1.25rem;
 }
 
 .content {
     text-align: center;
-}
-
-ul {
-    list-style: none;
+    margin: 0 auto;
+    width: 50rem;
 }
 
 
@@ -51,15 +51,39 @@ header h1 {
 }
 
 
-}
-
 /* Content styles
 (all the styles inside the < sections > or < aside > tags)
 */
 
+.instructions {
+    padding: 2rem;
+}
+
+#new-item {
+    text-align: center;
+    color: #;
+    border-color: #B2EBF2;
+    background-color: #00BC9D;
+    border-radius: 16px;
+    width: 21rem;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+    margin-top: 2rem;
+}
+
+.form li {
+    width: 33%;
+    text-align: left;
+}
+
+
 /* Footer styles
 (all the styles inside the < footer > tag)
 */
+
 
 /* Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)

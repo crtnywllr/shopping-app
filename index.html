@@ -19,49 +19,52 @@
 
     <section class="instructions">
         <div class="content">
-            <p>Add your items below - check off as you go or delete what you don't need.</p>
+            <p>Add your items below, or choose from popular items! Check off as you go and delete what you don't need.</p>
         </div>
     </section>
 
-    <section class="form">
-        <div class="content">
-            <div class="input-form">
-                <input id='new-item' type="text" placeholder="Add item..." maxlength='20'>
-            </div>
-            <ul>
-                <li>
-                    <button class="checkbox click">✓</button>
-                    <span class='ticked'>banana</span>
-                    <button class="delete">X</button>
-                </li>
-                <li>
-                    <button class="checkbox">✓</button>
-                    <span>blueberry cheesecake</span>
-                    <button class="delete">X</button>
-                </li>
-                <li>
-                    <button class="checkbox click">✓</button>
-                    <span class='ticked'>apple</span>
-                    <button class="delete">X</button>
-                </li>
-                <li>
-                    <button class="checkbox">✓</button>
-                    <span>laundry detergent</span>
-                    <button class="delete">X</button>
-                </li>
-                <li>
-                    <button class="checkbox click">✓</button>
-                    <span class='ticked'>seltzer</span>
-                    <button class="delete">X</button>
-                </li>
-            </ul>
+    <section class="content">
+        <div class="input-form">
+            <input id='new-item' type="text" placeholder="Add item..." maxlength='20'>
+            <button id="add">+</button>
         </div>
+
+        <ul class='shopping-list'>
+
+        </ul>
+
     </section>
-    <footer>
+    <section>
         <div class="content">
             <button class="clear">Clear List</button>
         </div>
+    </section>
+    <footer>
+        <div class='content'>
+            <h1><span style="color:#00bcd4">Popular</span> Items:</h1>
+            <ul class='popular'>
+                <li>eggs</li>
+                <li>milk</li>
+                <li>laundry detergent</li>
+                <li>cheese</li>
+                <li>spinach</li>
+            </ul>
+            <ul class='popular'>
+                <li>bread</li>
+                <li>apples</li>
+                <li>cereal</li>
+                <li>wine</li>
+                <li>onions</li>
+                <li>soda</li>
+            </ul>
+        </div>
     </footer>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+
+
 </body>
 
 </html>

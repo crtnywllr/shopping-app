@@ -13,9 +13,7 @@ function addItem() {
     //valid input
     else {
         //add one row in list
-        var row = $('<li><button class="checkbox">✓</button><span>' + itemValue + '</span><button class="delete">X</button></li>');
-        //add after previous list items
-        $('.shopping-list').append(row);
+        appendItem(itemValue);
 
         //empty input box
         itemValue = $('#new-item').val('');
@@ -39,11 +37,13 @@ function clearList() {
     $('.shopping-list').empty();
     //alert("I've just activated the clearList() function");
 }
-//add from bottom
-function addBottom() {
-    alert("I've just activated the addBottom() function");
-}
 
+//append item
+function appendItem(itemValue) {
+    var row = $('<li><button class="checkbox">✓</button><span>' + itemValue + '</span><button class="delete">X</button></li>');
+    //add after previous list items
+    $('.shopping-list').append(row);
+}
 
 
 //Step 2
@@ -58,7 +58,9 @@ $(document).ready(function () {
         })
         /*on click(.popular li) function addBottom ()*/
     $('.popular li').on('click', function () {
-        addBottom();
+        var itemValue = $(this).text();
+        appendItem(itemValue);
+
     })
 
 });

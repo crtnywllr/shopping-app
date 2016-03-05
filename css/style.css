@@ -23,14 +23,14 @@
 
 body {
     font-family: 'Muli', sans-serif;
+    color: #212121;
+    font-size: 16px;
 }
 
 .content {
     text-align: center;
-}
-
-ul {
-    list-style: none;
+    margin: 0 auto;
+    width: 50rem;
 }
 
 
@@ -51,15 +51,130 @@ header h1 {
 }
 
 
-}
-
 /* Content styles
 (all the styles inside the < sections > or < aside > tags)
 */
 
+.instructions {
+    padding: 2rem;
+}
+
+.input-form {
+    margin: 0 auto;
+}
+
+#new-item {
+    text-align: center;
+    color: #727272;
+    border: 3px dashed #00BCD4;
+    background-color: #fff;
+    border-radius: 1rem;
+    width: 21rem;
+}
+
+.input-form #add {
+    border-radius: 1rem;
+    background-color: #F3A4B1;
+    color: white;
+    height: 1.5em;
+    width: 1.5em;
+    margin-left: 1.2em;
+}
+
+.content ul {
+    list-style: outside none none;
+    margin: 1rem auto;
+    width: 70%;
+}
+
+.content li {
+    display: block;
+    height: 2.5em;
+    padding-top: 0.5em;
+    text-align: left;
+}
+
+.checkbox,
+.delete {
+    background: transparent;
+    border-color: transparent;
+    border-radius: 1rem;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+    height: 1.5em;
+    width: 1.5em;
+}
+
+.content .delete {
+    float: right;
+    color: #F3A4B1;
+}
+
+.content .click {
+    border-bottom: 1px solid #00bCd4;
+}
+
+.content .click button,
+.content .click span {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.content .click span {
+    padding: 0 0.5rem;
+    border-radius: 8px;
+}
+
+.checkbox:hover {
+    background-color: #00BCD4;
+    color: white;
+}
+
+.delete:hover,
+footer .popular li:hover {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.clear {
+    background-color: #00bcd4;
+    border-color: #F79A7A;
+    border-radius: 8px;
+    height: 4rem;
+    width: 20rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Flamenco', cursive;
+    font-size: 1.5rem;
+}
+
+
 /* Footer styles
 (all the styles inside the < footer > tag)
 */
+
+footer .content {
+    background-color: #F79A7A;
+    color: white;
+    border-radius: 8px;
+    margin-top: 2.5rem;
+}
+
+footer h1 {
+    padding-top: 1rem;
+    font-size: 150%;
+    margin-bottom: 1.5rem;
+}
+
+footer .popular {
+    margin-top: -2rem;
+}
+
+.content .popular li {
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
 
 /* Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)

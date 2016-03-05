@@ -13,29 +13,58 @@
     <header>
         <div class="content">
             <i class="fa fa-shopping-basket fa-5x" style="color:#fff"></i>
-
-            <h1><span style="color:#ff5252">Shopping</span> List</h1>
+            <h1><span style="color:#F79A7A">Shopping</span> List</h1>
         </div>
     </header>
-    <section class="list-rules">
+
+    <section class="instructions">
         <div class="content">
-            <p>Add items below! Check off when you are done or delete what you don't need.</p>
+            <p>Add your items below, or choose from popular items! Check off as you go and delete what you don't need.</p>
         </div>
     </section>
-    <section class="form">
+
+    <section class="content">
+        <div class="input-form">
+            <input id='new-item' type="text" placeholder="Add item..." maxlength='20'>
+            <button id="add">+</button>
+        </div>
+
+        <ul class='shopping-list'>
+
+        </ul>
+
+    </section>
+    <section>
         <div class="content">
-            <div class="input-form">
-                <input id='new-item' type="text" placeholder="Add item" maxlength='20'>
-            </div>
-            <ul>
-                <li>banana</li>
-                <li>blueberry cheesecake</li>
-                <li>apple</li>
+            <button class="clear">Clear List</button>
+        </div>
+    </section>
+    <footer>
+        <div class='content'>
+            <h1><span style="color:#00bcd4">Popular</span> Items:</h1>
+            <ul class='popular'>
+                <li>eggs</li>
+                <li>milk</li>
                 <li>laundry detergent</li>
-                <li>seltzer</li>
+                <li>cheese</li>
+                <li>spinach</li>
+            </ul>
+            <ul class='popular'>
+                <li>bread</li>
+                <li>apples</li>
+                <li>cereal</li>
+                <li>wine</li>
+                <li>onions</li>
+                <li>soda</li>
             </ul>
         </div>
-    </section>
+    </footer>
+    <script type='text/javascript' src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+
+
+
 </body>
 
 </html>
